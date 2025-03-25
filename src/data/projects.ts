@@ -8,6 +8,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    link: "En développement",
     title: "RTD RenovTonDressing",
     description:
       "Conception complète pour une plateforme type Vinted avec gestion des produits, utilisateurs et commandes. Messagerie et Chat. Développement pour le client en cours de réalisation",
@@ -39,6 +40,7 @@ export const projects: Project[] = [
     image: "/img/tdw.png",
   },
   {
+    link: "https://charles-photographie.vercel.app/",
     title: "Charles Cantin Photographie",
     description:
       "Création d’un site vitrine pour photographe avec une gestion dynamique des photos via le CMS Strapi pour une mise à jour simplifiée et autonome du portfolio.",
@@ -46,10 +48,18 @@ export const projects: Project[] = [
     image: "/img/cc.png",
   },
   {
+    link: "https://photo-agency-mu.vercel.app/",
     title: "Photo agency",
     description:
       "Développement Front-End initial en React, le projet n’a pas été poursuivi en raison de contraintes budgétaires du client.",
     technologies: ["React"],
     image: "img/pp.png",
+  },
+  {
+    link: "https://editeur-devis.vercel.app/",
+    title: "Editeur de devis",
+    description: "Editeur de devis gratuit en ligne",
+    technologies: ["React", "Vite"],
+    image: "img/editeurdevis.png",
   },
 ];

@@ -6,8 +6,15 @@ import {
   Chip,
 } from "@material-tailwind/react";
 import type { Project } from "../data/projects";
+import { Link } from "react-router-dom";
 
-export function ProjectCard({ title, description, technologies, image }: Project) {
+export function ProjectCard({
+  title,
+  description,
+  technologies,
+  image,
+  link,
+}: Project) {
   return (
     <Card className="max-w-[24rem] overflow-hidden">
       <CardHeader
@@ -16,11 +23,7 @@ export function ProjectCard({ title, description, technologies, image }: Project
         color="transparent"
         className="m-0 rounded-none"
       >
-        <img
-          src={image}
-          alt={title}
-          className="h-48 w-full object-cover"
-        />
+        <img src={image} alt={title} className="h-48 w-full object-cover" />
       </CardHeader>
       <CardBody>
         <Typography variant="h5" color="blue-gray">
@@ -38,6 +41,9 @@ export function ProjectCard({ title, description, technologies, image }: Project
             />
           ))}
         </div>
+        <Link to={link} variant="small" className="mt-2 text-gray-600">
+          {link}
+        </Link>
       </CardBody>
     </Card>
   );
